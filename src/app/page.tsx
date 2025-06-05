@@ -1,5 +1,6 @@
 import Image from "next/image";
 import  { Greet } from "./components/greet";
+import {Counter} from "@/app/components/counter";
 
 export default function Home() {
   return (
@@ -24,8 +25,9 @@ export default function Home() {
           <li className="tracking-[-.01em]">
             Hello world
           </li>
-          <Greet/>
         </ol>
+          <Greet/>
+          <Counter/>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
